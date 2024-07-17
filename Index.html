@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('bgimage2.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.circular-image:hover {
+    transform: scale(1.1); /* Increases the size by 10% on hover */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 50px; /* Default size for other icons */
+    height: 50px; /* Default size for other icons */
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Increases the size by 20% on hover */
+}
+
+.introduction {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    color: #fff;
+}
+
+.introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.introduction a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.introduction a:hover {
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, .introduction {
+        padding: 20px;
+    }
+
+    .circular-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tagline, .introduction p {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .introduction h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .introduction {
+        padding: 15px;
+    }
+
+    .circular-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .tagline, .introduction p {
+        font-size: 0.9rem;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .introduction h2 {
+        font-size: 1.2rem;
+    }
+}
+
+</style>
+<body>
+    <div class="content">
+        <div class="container">
+            <img src="pfp.jpeg" class="circular-image" alt="Profile Picture">
+            <h1>G4nn1</h1>
+            <p class="tagline">he/him/ProGdPlayer!!!</p>
+            <h3>Follow me on:</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/g4nn17/">
+                    <img src="insta5.webp" class="social-icon" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/wolf_zdark">
+                    <img src="twitterlogo2.png" class="social-icon" alt="Twitter">
+                </a>
+                <a href="https://www.tiktok.com/@g4nn11">
+                    <img src="tiktok.png" class="social-icon" alt="TikTok">
+                </a>
+                <a href="https://github.com/G4nn1">
+                    <img src="github.png" class="social-icon" alt="GitHub">
+                </a>
+            </div>
+        </div>
+
+        <div class="introduction">
+            <h2>Introduction</h2>
+            <p>
+                I'm a pretty cool 14-year-old dude who loves coding and gaming. I'm particularly skilled at Geometry Dash! If you'd like to become friends, you can <a href="https://discord.gg/SMRZbJ8P">add me on Discord here</a>.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
